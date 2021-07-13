@@ -80,32 +80,33 @@ Airtable is returning the data for this base as follows:
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     .5hrs      |      1hr      |     1hr     |
+| Airtable setup            |    H     |      2hrs      |      1hr      |     1hr     |
 | Data population           |    H     |      3hrs      |     2hrs      |    2hrs     |
 | Get, Set, Post Data part 1|    H     |      3hrs      |     3hrs      |    3hrs     |
-| Get, Set, Post Data part 2|    H     |      3hrs      |      1hr      |     1hr     |
-| Get, Set, Post Data part 3|    H     |      3hrs      |      1hr      |     1hr     |
-| New Form part 1.          |    H     |      2hrs      |      1hr      |     1hr     |
-| New Form part 2.          |    H     |      2hrs      |      1hr      |     1hr     |
+| Get, Set, Post Data part 2|    H     |      3hrs      |      2hr      |     2hr     |
+| Get, Set, Post Data part 3|    H     |      3hrs      |      2hr      |     2hr     |
+| New Form part 1.          |    H     |      3hrs      |      2hr      |     2hr     |
+| New Form part 2.          |    H     |      3hrs      |      2hr      |     2hr     |
+| Homepage rendering part 1 |    H     |      3hrs      |      2hr      |     2hr     |
+| Homepage rendering part 2 |    H     |      3hrs      |      2hr      |     2hr     |
+| Homepage rendering part 3 |    H     |      3hrs      |      3hr      |     3hr     |
 | Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Total                     |    H     |      40hrs     |     35hrs     |    35hrs    |
 
 ## SWOT Analysis
 
 ### Strengths:
 
-I have a good understanding of what i want my application to look like and what exactly I want it to do. As such, I can better plan for what needs to be done and how long it will take. I also know which labs and excercise I can reference if I get lost along the way.
+I have a good understanding of how I want the project to be done. My algorithm skills are solid so I think the set up, get, and posting data will be simple.
 
 ### Weaknesses:
-
-I am still not terribly clear on CRUD and how to make sure I can carry each aspect out for this project. Additionally, I prefer to stick to functional components but given the parameters of the project, I'll need to use class components, as well. I will likely use most of my research time/manager help on these matters.
+I am not very good with CSS and that will take the most amount of time other than polishing things out. 
 
 ### Opportunities:
 
-This project is the culmination of the last 2 weeks and will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
+This will help me learn about how to do get, post, and setting. This will also look good on my projects as an e-commerce website.
 
 ### Threats:
-
-Whenever I get stuck with an error or an issue, I tend to go down a rabbit hole of online searches and debugging. Often times, I don't timebox these episodes and lose a lot of time. While this is typically a favorable characteristic in a developer, I'll need to make sure I know when to ask for help.
+Debugging and finishing on time is going to be a struggle for me If I cannot get things to work properly.

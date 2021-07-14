@@ -29,16 +29,6 @@ export default function ProminalDetail() {
     setEverything(res.data)
   }
 
-  const handleDelete = async () => {
-    const bigURL = `${URL}/${id}`;
-    const res = await axios.delete(bigURL, {
-      headers: {
-        Authorization: `Bearer ${AIRTABLE_KEY}`
-      }
-    })
-    console.log(res)
-    history.push("/everything")
-  }
 
   return <div>
     <h2>{everything.fields?.name}</h2>
@@ -47,7 +37,6 @@ export default function ProminalDetail() {
     <img src={everything.fields?.avatar_url} alt={everything.fields?.name} />
     <p>{everything.fields?.description}</p>
     <h2>{everything.fields?.price}</h2>
-    <button onClick={handleDelete}>Delete Everything</button>
   </div>
 }
 

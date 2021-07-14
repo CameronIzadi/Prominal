@@ -41,7 +41,7 @@ export default function NewItem() {
   };
   return (
     <div>
-      new
+      Create New Item
       <form onSubmit={handleSubmit}>
 
         <label>name</label>
@@ -51,13 +51,7 @@ export default function NewItem() {
           onChange={(e) => setName(e.target.value)}
         />
         <br />
-        <label>price</label>
-        <input
-          type="number"
-          value={price}
-          onChange={(e) => setPrice(parseInt(e.target.value))}
-        />
-        <br />
+
         <label>author</label>
         <input
           type="text"
@@ -65,6 +59,7 @@ export default function NewItem() {
           onChange={(e) => setAuthor(e.target.value)}
         />
         <br />
+
         <label>description</label>
         <input
           type="text"
@@ -72,6 +67,7 @@ export default function NewItem() {
           onChange={(e) => setDescription(e.target.value)}
         />
         <br />
+
         <label>image</label>
         <input
           type="text"
@@ -79,6 +75,15 @@ export default function NewItem() {
           onChange={(e) => setImage(e.target.value)}
         />
         <br />
+
+        <label>price</label>
+        <input
+          type="number"
+          value={price}
+          onChange={(e) => setPrice(parseInt(e.target.value))}
+        />
+        <br />
+
         <label>avatar</label>
         <input
           type="text"
@@ -86,6 +91,7 @@ export default function NewItem() {
           onChange={(e) => setAvatarUrl(e.target.value)}
         />
         <br />
+
         <button>Create Website/Software</button>
       </form>
     </div>

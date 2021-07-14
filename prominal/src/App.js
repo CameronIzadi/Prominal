@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import Navbar from "./components/Navbar.jsx"
 
 import ProminalList from "./components/ProminalList.jsx"
+import ProminalDetail from './components/ProminalDetail';
 
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
 
       <Route exact path="/">
         <ProminalList />
+      </Route>
+
+      <Route exact path="/:id">
+        <ProminalDetail />
       </Route>
     </div>
   );

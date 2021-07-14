@@ -38,7 +38,7 @@ export default function ProminalList() {
             </Link>
             <h3>{everythin.fields.author}</h3>
             <h3>{everythin.fields.description}</h3>
-            <h3>{everythin.fields.price}</h3>
+            <h3>${everythin.fields.price}</h3>
           </div>
         )
       }

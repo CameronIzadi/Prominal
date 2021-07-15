@@ -2,6 +2,7 @@ import React from "react"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import { useParams, useHistory } from "react-router"
+import Loader from "./Loader"
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
@@ -29,6 +30,9 @@ export default function ProminalDetail() {
     setEverything(res.data)
   }
 
+  if (everything.length === 0) {
+    return <Loader />;
+  }
 
   return <div>
     <h2>{everything.fields?.name}</h2>

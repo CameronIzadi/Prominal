@@ -33,6 +33,9 @@ export default function ProminalDetail() {
   if (everything.length === 0) {
     return <Loader />;
   }
+  // let stringed = JSON.stringify(everything.fields?.image)
+  // let parsed = JSON.parse(stringed)
+  // console.log(parsed)
 
   return <div>
     <h2>{everything.fields?.name}</h2>

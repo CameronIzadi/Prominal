@@ -13,6 +13,7 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/TABLE%201`
 
 export default function ProminalDetail() {
   const [everything, setEverything] = useState({})
+  const [thingimage, setThingImage] = useState([])
   const { id } = useParams()
   const history = useHistory()
 
@@ -28,14 +29,16 @@ export default function ProminalDetail() {
       }
     })
     setEverything(res.data)
+    setThingImage(res.data.fields)
   }
 
   if (everything.length === 0) {
     return <Loader />;
   }
-  // let stringed = JSON.stringify(everything.fields?.image)
-  // let parsed = JSON.parse(stringed)
-  // console.log(parsed)
+  
+//  JSON.stringify(thingimage.image)
+// JSON.parse(thingimage.image)
+// console.log(thingimage[0].image)
 
   return <div>
     <h2>{everything.fields?.name}</h2>

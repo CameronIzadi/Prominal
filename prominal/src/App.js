@@ -1,6 +1,8 @@
 import './App.css';
-import { Route } from "react-router-dom"
+import { Route, Link } from "react-router-dom"
 import Navbar from "./components/Navbar.jsx"
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 
 import ProminalList from "./components/ProminalList.jsx"
 import ProminalDetail from './components/ProminalDetail';
@@ -11,10 +13,16 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <Route exact path="/">
-        <ProminalList />
-      </Route>
+      <Link to="/" className="back">
+        <ArrowBackIcon />
+      </Link>
 
+      <div className="list">
+      <Route exact path="/">
+        <ProminalList/>
+      </Route>
+      </div>
+      
       <Route exact path="/:id">
         <ProminalDetail />
       </Route>

@@ -1,11 +1,23 @@
 .navbar {
   box-sizing: none;
-  margin: 0;
-  padding: 0;
   background-color: #384ba7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .back {
-  display: flex;
-  align-self: flex-end;
+  float: left;
+}
+
+.clicks {
+  text-align: right;
+}
+
+.prominal {
+  display: inline;
+  /* float: left; */
+  /* vertical-align: bottom; */
 }

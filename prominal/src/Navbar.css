@@ -1,6 +1,14 @@
 .navbar {
+  display: flex;
+  flex-direction: row;
   box-sizing: none;
-  background-color: #384ba7;
+  background: linear-gradient(
+      to left,
+      rgb(62, 62, 160),
+      rgb(51, 58, 125),
+      rgb(119, 119, 203)
+    ),
+    linear-gradient(purple, rgb(182, 70, 182));
 }
 
 * {
@@ -13,11 +21,17 @@
 }
 
 .clicks {
-  text-align: right;
+  display: flex;
+  margin-left: 75%;
+  width: 70vw;
+  justify-self: end;
 }
-
+.home {
+  padding: 0 20px;
+}
 .prominal {
-  display: inline;
-  /* float: left; */
-  /* vertical-align: bottom; */
+  justify-self: start;
+  vertical-align: bottom;
+  font-family: "Uchen", serif;
+  color: rgb(166, 73, 171);
 }

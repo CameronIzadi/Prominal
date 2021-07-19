@@ -19,14 +19,17 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/TABLE%201`
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
-    padding: 50,
+    padding: 20,
+    
   },
   details: {
     display: 'flex',
     flexDirection: 'column',
   },
   content: {
+    display: 'flex',
     flex: '1 0 auto',
+    flexDirection: 'column',
   },
   cover: {
     width: 500,
@@ -76,7 +79,7 @@ export default function ProminalList() {
                   </Link>
                 </CardMedia>
 
-              <div className={classes.details}>
+              {/* <div className={classes.details}> */}
                 <CardContent className={classes.content}>
                   <Typography component="h5" variant="h5">
                     <Link to={`/${everythin.id}`} key={everythin.id}>
@@ -95,7 +98,7 @@ export default function ProminalList() {
                   </Typography>
                 </CardContent>
                 
-              </div>
+              {/* </div> */}
               
             </Card>
           

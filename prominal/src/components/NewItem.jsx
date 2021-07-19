@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router";
 import axios from "axios";
+import "../NewItem.css"
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -40,7 +41,7 @@ export default function NewItem() {
     history.push(`/${res.data.id}`);
   };
   return (
-    <div>
+    <div className="new-item">
       Create New Item
       <form onSubmit={handleSubmit}>
 

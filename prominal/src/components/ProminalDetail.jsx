@@ -19,7 +19,7 @@ export default function ProminalDetail() {
 
   useEffect(() => {
     fetchEverything()
-
+    
   }, [])
   const fetchEverything = async () => {
     const bigURL = `${URL}/${id}`
@@ -35,7 +35,7 @@ export default function ProminalDetail() {
   if (everything.length === 0) {
     return <Loader />;
   }
-  
+
 //  JSON.stringify(thingimage.image)
 // JSON.parse(thingimage.image)
 // console.log(thingimage[0].image)
@@ -44,6 +44,10 @@ export default function ProminalDetail() {
     <h2>{everything.fields?.name}</h2>
     <h2>{everything.fields?.author}</h2>
     <img src={everything.fields?.image} alt={everything.fields?.name} />
+    <img src={everything.fields?.image_2} alt={everything.fields?.name} />
+    <img src={everything.fields?.image_3} alt={everything.fields?.name} />
+    <img src={everything.fields?.image_4} alt={everything.fields?.name} />
+    <img src={everything.fields?.image_5} alt={everything.fields?.name} />
     <img src={everything.fields?.avatar_url} alt={everything.fields?.name} />
     <p>{everything.fields?.description}</p>
     <h2>{everything.fields?.price}</h2>

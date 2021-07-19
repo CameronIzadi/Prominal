@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Loader from "./Loader"
 
 // import { makeStyles } from '@material-ui/core/styles';
-// import { Card } from '@material-ui/core'
+import { Card } from '@material-ui/core'
 import { CardContent } from '@material-ui/core';
 import { CardMedia } from '@material-ui/core';
 import "../ProminalList.css"
@@ -49,7 +49,7 @@ export default function ProminalList() {
         return (
           <div key={index}>
             
-            {/* <Card className="classesRoot"> */}
+            <Card className="classesRoot">
 
             <CardMedia>
                <Link to={`/${everythin.id}`} key={everythin.id}>
@@ -76,7 +76,7 @@ export default function ProminalList() {
                 </CardContent>
                 
               
-            {/* </Card> */}
+            </Card>
           
           </div>
         )

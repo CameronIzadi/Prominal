@@ -44,7 +44,7 @@ export default function NewItem() {
       Create New Item
       <form onSubmit={handleSubmit}>
 
-        <label>name</label>
+        <label>Name: </label>
         <input
           type="text"
           value={name}
@@ -52,7 +52,7 @@ export default function NewItem() {
         />
         <br />
 
-        <label>author</label>
+        <label>Author: </label>
         <input
           type="text"
           value={author}
@@ -60,7 +60,7 @@ export default function NewItem() {
         />
         <br />
 
-        <label>description</label>
+        <label>Description: </label>
         <input
           type="text"
           value={description}
@@ -68,7 +68,7 @@ export default function NewItem() {
         />
         <br />
 
-        <label>image</label>
+        <label>Image: </label>
         <input
           type="text"
           value={image}
@@ -76,7 +76,7 @@ export default function NewItem() {
         />
         <br />
 
-        <label>price</label>
+        <label>Price: </label>
         <input
           type="number"
           value={price}
@@ -84,7 +84,7 @@ export default function NewItem() {
         />
         <br />
 
-        <label>avatar</label>
+        <label>Avatar URL: </label>
         <input
           type="text"
           value={avatar_url}

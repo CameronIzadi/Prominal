@@ -11,7 +11,7 @@ function Navbar() {
     <div className="clicks">   
         <Link className="home" to="/">Home </Link>
       
-        <Link to="/new-item"> New Item</Link>
+        <Link to="/new/new-item"> New Item</Link>
       </div>
       </ul>
     </nav>

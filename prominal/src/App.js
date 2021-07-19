@@ -28,14 +28,14 @@ function App() {
         <ProminalDetail />
       </Route>
 
-      <Route exact path="/new-item">
+      <Route exact path="/new/new-item">
         <NewItem />
       </Route>
 
       <footer>
         <Footer />
       </footer>
-      
+
     </div>
   );
 }

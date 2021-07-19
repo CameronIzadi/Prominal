@@ -21,10 +21,10 @@ function App() {
       </div>
       
       <Route exact path="/:id">
-        <ProminalDetail />
       <Link to="/" className="back">
           <ArrowBackIcon />
       </Link>
+        <ProminalDetail />
       </Route>
 
       <Route exact path="/new-item">

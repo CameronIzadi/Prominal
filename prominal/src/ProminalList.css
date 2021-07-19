@@ -1,0 +1,17 @@
+.classesRoot {
+  display: flex;
+  padding: 20;
+}
+
+.classesCover {
+  width: 500;
+}
+
+.classesContent {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* @media (max-width: 600px) {
+} */

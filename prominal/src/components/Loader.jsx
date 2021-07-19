@@ -5,6 +5,6 @@ import "../Loader.css"
 
 export default function Loader() {
 
-  return <PuffLoader size={500}
+  return <PuffLoader className="loader" size={500}
           />;
 }

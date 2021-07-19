@@ -5,6 +5,7 @@ import "../Navbar.css"
 function Navbar() {
   return (
     <nav className="navbar" >
+      <ul className="nav-list">
       <h1 className="prominal">Prominal</h1>
       
     <div className="clicks">   
@@ -12,8 +13,7 @@ function Navbar() {
       
         <Link to="/new-item"> New Item</Link>
       </div>
-      
-      {/* <Link to="/edit-everything"> Edit Everything</Link> */}
+      </ul>
     </nav>
   )
 }

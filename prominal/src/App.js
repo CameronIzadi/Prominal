@@ -32,7 +32,10 @@ function App() {
         <NewItem />
       </Route>
 
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
+      
     </div>
   );
 }

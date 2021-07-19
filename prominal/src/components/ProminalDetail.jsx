@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import axios from "axios"
-import { useParams, useHistory } from "react-router"
+import { useParams } from "react-router"
 import Loader from "./Loader"
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -13,9 +13,7 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/TABLE%201`
 
 export default function ProminalDetail() {
   const [everything, setEverything] = useState({})
-  const [thingimage, setThingImage] = useState([])
   const { id } = useParams()
-  const history = useHistory()
 
   useEffect(() => {
     fetchEverything()
@@ -29,16 +27,11 @@ export default function ProminalDetail() {
       }
     })
     setEverything(res.data)
-    setThingImage(res.data.fields)
   }
 
   if (everything.length === 0) {
     return <Loader />;
   }
-
-//  JSON.stringify(thingimage.image)
-// JSON.parse(thingimage.image)
-// console.log(thingimage[0].image)
 
   return <div>
     <h2>{everything.fields?.name}</h2>

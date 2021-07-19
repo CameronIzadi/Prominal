@@ -13,10 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <Link to="/" className="back">
-        <ArrowBackIcon />
-      </Link>
-
+        
       <div className="list">
       <Route exact path="/">
         <ProminalList/>
@@ -25,6 +22,9 @@ function App() {
       
       <Route exact path="/:id">
         <ProminalDetail />
+      <Link to="/" className="back">
+          <ArrowBackIcon />
+      </Link>
       </Route>
 
       <Route exact path="/new-item">

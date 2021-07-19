@@ -57,7 +57,6 @@ export default function ProminalList() {
       {
         headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
       });
-    console.log(res.data.records)
     setEverything(res.data.records)
   };
 
@@ -75,7 +74,7 @@ export default function ProminalList() {
 
             <CardMedia>
                <Link to={`/${everythin.id}`} key={everythin.id}>
-                  <img className={classes.cover}   src={everythin.fields.image} />
+                  <img className={classes.cover}   src={everythin.fields.image}  alt=""/>
                   </Link>
                 </CardMedia>
 

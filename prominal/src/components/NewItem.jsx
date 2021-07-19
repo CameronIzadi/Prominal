@@ -36,7 +36,6 @@ export default function NewItem() {
         headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
       }
     );
-    console.log(res);
     setName("");
     history.push(`/${res.data.id}`);
   };

@@ -35,9 +35,8 @@ export default function ProminalDetail() {
     return <Loader />;
   }
 
-  return <div>
+  return <div className="bodyContainer">
     <h2>{everything.fields?.name}</h2>
-    <h2>{everything.fields?.author}</h2>
     <div class="parent">
     <div class="div1"> 
         <img className="image1" src={everything.fields?.image} alt={everything.fields?.name} />
@@ -54,8 +53,9 @@ export default function ProminalDetail() {
       <div class="div5">
       <img  className="image5" src={everything.fields?.image_5} alt={everything.fields?.name} />
       </div>
-      </div>
-    <img src={everything.fields?.avatar_url} alt={everything.fields?.name} />
+    </div>
+    <h2>{everything.fields?.author}</h2>
+    <img className="avatar" src={everything.fields?.avatar_url} alt={everything.fields?.name} />
     <p>{everything.fields?.description}</p>
     <h2>{everything.fields?.price}</h2>
   </div>

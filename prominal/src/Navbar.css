@@ -23,7 +23,7 @@
 .clicks {
   display: flex;
   margin-left: 75%;
-  width: 70vw;
+  width: 100%;
   justify-self: end;
 }
 .home {

@@ -7,6 +7,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ProminalList from "./components/ProminalList.jsx"
 import ProminalDetail from './components/ProminalDetail';
 import NewItem from "./components/NewItem";
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
       <Route exact path="/new-item">
         <NewItem />
       </Route>
+
+      <Footer />
     </div>
   );
 }

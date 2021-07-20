@@ -18,6 +18,15 @@ function Navbar() {
           
         </div>
         
+        {/* <div id="searchWrapper">
+          <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="search for something"
+            />
+        </div> */}
+
       </ul>
 
     </nav>

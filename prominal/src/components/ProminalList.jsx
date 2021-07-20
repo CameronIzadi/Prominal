@@ -17,9 +17,20 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/TABLE%201`
 
 export default function ProminalList() {
   const [everything, setEverything] = useState([])
+
+  // const searchBar = document.getElementById('searchBar');
+  // let allData = []
   
-
-
+  // if (searchBar) {
+  //   searchBar.addEventListener('keyup', (e) => {
+  //     console.log(e.target.value)
+  //     const searchString = e.target.value
+  //     const filteredEverything = allData.filter(thing => {
+  //       return thing.fields.name.includes(searchString)
+  //     })
+  //     console.log(filteredEverything)
+  //   })
+  // }
 
   useEffect(() => {
 
@@ -33,6 +44,8 @@ export default function ProminalList() {
       {
         headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
       });
+    
+    // allData = res.data.records
     setEverything(res.data.records)
   };
 

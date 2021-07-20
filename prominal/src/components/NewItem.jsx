@@ -39,13 +39,15 @@ export default function NewItem() {
     setName("");
     history.push(`/${res.data.id}`);
   };
+
   return (
     <div className="new-item">
-      Create New Item
+      Create New Website/Software
       <form onSubmit={handleSubmit}>
 
         <label>Name: </label>
         <input
+          className="name2"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -54,6 +56,7 @@ export default function NewItem() {
 
         <label>Author: </label>
         <input
+          className="author2"
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
@@ -62,6 +65,7 @@ export default function NewItem() {
 
         <label>Description: </label>
         <input
+          className="descriptionResult"
           type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
@@ -70,6 +74,7 @@ export default function NewItem() {
 
         <label>Image: </label>
         <input
+          className="imaged"
           type="text"
           value={image}
           onChange={(e) => setImage(e.target.value)}
@@ -78,6 +83,7 @@ export default function NewItem() {
 
         <label>Price: </label>
         <input
+          className="price2"
           type="number"
           value={price}
           onChange={(e) => setPrice(parseInt(e.target.value))}
@@ -86,6 +92,7 @@ export default function NewItem() {
 
         <label>Avatar URL: </label>
         <input
+          className="avatarUrl"
           type="text"
           value={avatar_url}
           onChange={(e) => setAvatarUrl(e.target.value)}

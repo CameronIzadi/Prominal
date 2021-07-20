@@ -23,7 +23,7 @@
 .clicks {
   display: flex;
   margin-left: 100%;
-  width: 80vw;
+  width: 5vw;
   justify-self: end;
 }
 .home {
@@ -34,4 +34,9 @@
   vertical-align: bottom;
   font-family: "Uchen", serif;
   color: rgb(166, 73, 171);
+}
+
+.prominal:hover,
+.new:hover {
+  opacity: 50%;
 }

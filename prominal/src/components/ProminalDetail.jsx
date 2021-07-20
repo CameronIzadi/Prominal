@@ -56,8 +56,8 @@ export default function ProminalDetail() {
     </div>
     <h2>{everything.fields?.author}</h2>
     <img className="avatar" src={everything.fields?.avatar_url} alt={everything.fields?.name} />
-    <p className="description">{everything.fields?.description}</p>
     <h2 className="price">${everything.fields?.price}</h2>
+    <p className="description">{everything.fields?.description}</p>
   </div>
 }
 

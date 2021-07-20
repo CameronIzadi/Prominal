@@ -1,3 +1,23 @@
 .new-item {
   text-align: center;
 }
+
+.name2,
+.author2,
+.descriptionResult,
+.imaged,
+.price2,
+.avatarUrl {
+  margin: 7vh;
+  padding: 7px 10vw;
+  background-color: lightgreen;
+}
+
+.name2:hover,
+.author2:hover,
+.descriptionResult:hover,
+.imaged:hover,
+.price2:hover,
+.avatarUrl:hover {
+  opacity: 70%;
+}

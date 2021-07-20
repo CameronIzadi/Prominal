@@ -49,34 +49,33 @@ export default function ProminalList() {
         return (
           <div key={index}>
             
-            <Card className="classesRoot">
+            {/* <Card className="classesRoot"> */}
+              <div className="classesRoot">
 
-            <CardMedia>
+            {/* <CardMedia> */}
                <Link to={`/${everythin.id}`} key={everythin.id}>
                   <img className="classesCover"   src={everythin.fields.image}  alt=""/>
                   </Link>
-                </CardMedia>
+                {/* </CardMedia> */}
 
-                <CardContent className="classesContent">
-                  {/* <Typography component="h5" variant="h5"> */}
-                    <Link to={`/${everythin.id}`} key={everythin.id}>
-                      <h3>{everythin.fields.name}</h3>
-                    </Link>
-                  {/* </Typography> */}
-                  {/* <Typography variant="subtitle1" color="textSecondary"> */}
+              {/* <CardContent className="classesContent"> */}
+              <div className="classesContent">
+                
+                <Link to={`/${everythin.id}`} key={everythin.id}>
+                      <h2 className="name">{everythin.fields.name}</h2>
+                </Link>
                     
-                    <h3>{everythin.fields.author}</h3>
-                  {/* </Typography> */}
-                  {/* <Typography variant="subtitle1" color="textSecondary"> */}
-                    <h3>{everythin.fields.description}</h3>
-                  {/* </Typography> */}
-                  {/* <Typography variant="subtitle1" color="textSecondary"> */}
-                    <h3>${everythin.fields.price}</h3>
-                  {/* </Typography> */}
-                </CardContent>
+                <h5 className="author">{everythin.fields.author}</h5>
+                
+                <h4 className="description">{everythin.fields.description}</h4>
+                
+                <h2 className="price">${everythin.fields.price}</h2>
+                </div>
+                {/* </CardContent> */}
                 
               
-            </Card>
+            {/* </Card> */}
+            </div>
           
           </div>
         )

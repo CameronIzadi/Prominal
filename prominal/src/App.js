@@ -29,6 +29,9 @@ function App() {
       </Route>
 
       <Route exact path="/new/new-item">
+      <Link to="/" className="back">
+          <ArrowBackIcon />
+      </Link>
         <NewItem />
       </Route>
 

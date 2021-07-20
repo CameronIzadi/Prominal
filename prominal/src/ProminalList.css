@@ -7,10 +7,25 @@
   width: 500px;
 }
 
+.classesCover:hover {
+  opacity: 70%;
+}
+
 .classesContent {
   display: flex;
-  flex: 1 0 auto;
   flex-direction: column;
+}
+
+.description {
+  padding: 30px;
+}
+
+.author {
+  text-align: left;
+}
+
+.name:hover {
+  opacity: 65%;
 }
 
 @media (max-width: 800px) {
@@ -24,5 +39,9 @@
 
   .classesContent {
     height: 140px;
+  }
+
+  .description {
+    padding: 0px;
   }
 }

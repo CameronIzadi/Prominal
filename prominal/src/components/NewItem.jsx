@@ -10,11 +10,19 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Table%201`;
 
 export default function NewItem() {
   const [name, setName] = useState("");
-  const [price, setPrice] = useState("");
   const [author, setAuthor] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
   const [avatar_url, setAvatarUrl] = useState("")
+  const [image, setImage] = useState("");
+  const [description, setDescription] = useState("");
+  const [price, setPrice] = useState("");
+  const [image_2, setImage2] = useState("")
+  const [image_3, setImage3] = useState("")
+  const [image_4, setImage4] = useState("")
+  const [image_5, setImage5] = useState("")
+
+
+
+
 
   const history = useHistory();
 
@@ -23,10 +31,14 @@ export default function NewItem() {
     const fields = {
       name,
       author,
-      description,
-      image,
-      price,
       avatar_url,
+      image,
+      description,
+      price,
+      image_2,
+      image_3,
+      image_4,
+      image_5,
     };
 
     const res = await axios.post(
@@ -99,6 +111,41 @@ export default function NewItem() {
         />
         <br />
 
+        <label>Image 2: </label>
+        <input
+          className="avatarUrl"
+          type="text"
+          value={image_2}
+          onChange={(e) => setImage2(e.target.value)}
+        />
+        <br />
+
+        <label>Image 3: </label>
+        <input
+          className="avatarUrl"
+          type="text"
+          value={image_3}
+          onChange={(e) => setImage3(e.target.value)}
+        />
+        <br />
+
+        <label>Image 4: </label>
+        <input
+          className="avatarUrl"
+          type="text"
+          value={image_4}
+          onChange={(e) => setImage4(e.target.value)}
+        />
+        <br />
+
+        <label>Image 5: </label>
+        <input
+          className="avatarUrl"
+          type="text"
+          value={image_5}
+          onChange={(e) => setImage5(e.target.value)}
+        />
+        <br />
         <button>Create Website/Software</button>
       </form>
     </div>

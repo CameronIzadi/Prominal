@@ -4,10 +4,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import Loader from "./Loader"
 
-// import { makeStyles } from '@material-ui/core/styles';
-import { Card } from '@material-ui/core'
-import { CardContent } from '@material-ui/core';
-import { CardMedia } from '@material-ui/core';
+
 import "../ProminalList.css"
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -49,16 +46,12 @@ export default function ProminalList() {
         return (
           <div key={index}>
             
-            {/* <Card className="classesRoot"> */}
               <div className="classesRoot">
 
-            {/* <CardMedia> */}
                <Link to={`/${everythin.id}`} key={everythin.id}>
                   <img className="classesCover"   src={everythin.fields.image}  alt=""/>
                   </Link>
-                {/* </CardMedia> */}
 
-              {/* <CardContent className="classesContent"> */}
               <div className="classesContent">
                 
                 <Link to={`/${everythin.id}`} key={everythin.id}>
@@ -71,10 +64,8 @@ export default function ProminalList() {
                 
                 <h2 className="price">${everythin.fields.price}</h2>
                 </div>
-                {/* </CardContent> */}
                 
               
-            {/* </Card> */}
             </div>
           
           </div>

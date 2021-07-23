@@ -8,6 +8,7 @@ import ProminalList from "./components/ProminalList.jsx"
 import ProminalDetail from './components/ProminalDetail';
 import NewItem from "./components/NewItem";
 import Footer from './components/Footer'
+// import SearchBar from './components/SearchBar'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
 
         
       <div className="list">
-      <Route exact path="/">
+        <Route exact path="/">
+          {/* <SearchBar /> */}
         <ProminalList/>
       </Route>
       </div>
